@@ -5050,7 +5050,7 @@ func (e HIGHRES_IMU_UPDATED_FLAGS) String() string {
 }
 
 // Flags in the HIL_SENSOR message indicate which fields have updated since the last message
-type HIL_SENSOR_UPDATED_FLAGS int
+type HIL_SENSOR_UPDATED_FLAGS int64
 
 const (
 	// None of the fields in HIL_SENSOR have been updated
