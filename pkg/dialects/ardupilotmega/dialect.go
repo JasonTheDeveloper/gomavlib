@@ -5050,7 +5050,7 @@ func (e HIGHRES_IMU_UPDATED_FLAGS) String() string {
 }
 
 // Flags in the HIL_SENSOR message indicate which fields have updated since the last message
-type HIL_SENSOR_UPDATED_FLAGS int64
+type HIL_SENSOR_UPDATED_FLAGS int
 
 const (
 	// None of the fields in HIL_SENSOR have been updated
@@ -5082,7 +5082,7 @@ const (
 	// The value in the temperature field has been updated
 	HIL_SENSOR_UPDATED_TEMPERATURE HIL_SENSOR_UPDATED_FLAGS = 4096
 	// Full reset of attitude/position/velocities/etc was performed in sim (Bit 31).
-	HIL_SENSOR_UPDATED_RESET HIL_SENSOR_UPDATED_FLAGS = 2147483648
+	HIL_SENSOR_UPDATED_RESET HIL_SENSOR_UPDATED_FLAGS = 2147483647
 )
 
 var labels_HIL_SENSOR_UPDATED_FLAGS = map[HIL_SENSOR_UPDATED_FLAGS]string{
